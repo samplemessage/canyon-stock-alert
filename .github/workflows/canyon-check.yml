@@ -23,6 +23,6 @@ jobs:
           TELEGRAM_TOKEN: ${{ secrets.TELEGRAM_TOKEN }}
           TELEGRAM_CHAT_ID: ${{ secrets.TELEGRAM_CHAT_ID }}
           BIKE_URL: "https://www.canyon.com/de-de/rennrad/endurance-rennrad/endurace/allroad/endurace-allroad/4164.html?dwvar_4164_pv_rahmenfarbe=R138_P02&dwvar_4164_pv_rahmengroesse=S"
-          BIKE_SIZE: "S"
+          BIKE_SIZE: "L"
         run: node check.mjs
  
