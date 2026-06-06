@@ -34,7 +34,7 @@ async function checkAvailability() {
     await sendTelegram(`⚠️ Canyon stock check failed – size element not found. Please check manually: ${BIKE_URL}`);
     return;
   }
-
+console.log('Element HTML:', element.innerHTML);  // ADD THIS LINE
     const isAvailable = !element.innerHTML.includes('Notify') && !element.innerHTML.includes('Benachrichtige');
 
   if (isAvailable) {
