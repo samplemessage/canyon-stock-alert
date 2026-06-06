@@ -35,7 +35,7 @@ async function checkAvailability() {
     return;
   }
 console.log('Element HTML:', element.innerHTML);  // ADD THIS LINE
-    const isAvailable = !element.innerHTML.includes('Notify') && !element.innerHTML.includes('Benachrichtige');
+    const isAvailable = !element.innerHTML.includes('notifyMe');
 
   if (isAvailable) {
     await sendTelegram(`✅ Canyon Endurace AllRoad size ${BIKE_SIZE} is IN STOCK! 🚴 Buy now: ${BIKE_URL}`);
