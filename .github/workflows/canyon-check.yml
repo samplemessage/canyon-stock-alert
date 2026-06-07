@@ -2,7 +2,10 @@ name: Canyon Stock Check
  
 on:
   schedule:
-    - cron: '*/30 * * * *'  # every 30 minutes
+    - cron: '0 * * * *'   # every hour at :00
+    - cron: '15 * * * *'  # every hour at :15
+    - cron: '30 * * * *'  # every hour at :30
+    - cron: '45 * * * *'  # every hour at :45
   workflow_dispatch:          # allows manual trigger from GitHub UI
  
 jobs:
